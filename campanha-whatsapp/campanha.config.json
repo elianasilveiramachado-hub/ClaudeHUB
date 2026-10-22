@@ -1,0 +1,43 @@
+{
+  "_leia-me": "Valores da campanha usados pelas artes e pelos documentos. Troque null pelo valor decidido e rode `node gerar.mjs`. Enquanto um valor for null, ele aparece como marcador DEFINIR nas artes e nos documentos. As sugestões ficam em _sugestoes e não são usadas automaticamente.",
+
+  "marca": {
+    "nome": "Scenty",
+    "razaoSocial": "Scenty Marketing Olfativo",
+    "instagram": null,
+    "cnpj": null
+  },
+  "datas": {
+    "inicio": null,
+    "fim": null,
+    "resultado": null
+  },
+  "premio": {
+    "nome": "Kit Aromático Scenty",
+    "itens": null
+  },
+  "cupom": {
+    "codigo": null,
+    "desconto": null,
+    "validade": null
+  },
+  "loja": {
+    "plataforma": null
+  },
+  "grupo": {
+    "linkConvite": null
+  },
+  "aprovacao": {
+    "responsavel": null
+  },
+
+  "_sugestoes": {
+    "marca.instagram": "@scenty",
+    "datas": "Datas no formato DD/MM. Sugestão: 10 dias de inscrições e resultado 2 dias depois do fim.",
+    "premio.itens": ["Difusor de varetas 250 ml", "Home spray 200 ml", "Água perfumada para tecidos", "Sachê perfumado"],
+    "cupom.codigo": "VIPSCENTY10",
+    "cupom.desconto": "10%",
+    "loja.plataforma": "Uma de: Nuvemshop, Shopify, Tray, Loja Integrada, WooCommerce",
+    "grupo.linkConvite": "https://chat.whatsapp.com/..."
+  }
+}
