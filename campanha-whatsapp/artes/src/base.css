@@ -71,3 +71,18 @@ body {
 .cta svg { flex: none; }
 
 .fine { color: rgba(244, 239, 230, 0.6); font-size: 22px; letter-spacing: 0.02em; }
+
+/* Valor ainda sem definição em campanha.config.json. Propositalmente fora da identidade visual. */
+mark.definir {
+  background: #ffe600;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.8em;
+  letter-spacing: 0;
+  text-transform: none;
+  padding: 0.08em 0.35em;
+  border: 3px dashed #d10000;
+  border-radius: 6px;
+}

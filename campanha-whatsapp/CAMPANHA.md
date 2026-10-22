@@ -1,11 +1,36 @@
+<!-- Arquivo gerado por gerar.mjs a partir de modelos/ e campanha.config.json. Edite o modelo, não este arquivo. -->
+
 # Campanha "Qual cheiro te leva pra casa?" (Scenty)
 
 **Objetivo:** aumentar a interação no Instagram e levar seguidores para o **Grupo VIP do WhatsApp** da loja.
 **Formato:** concurso cultural. Vence a resposta mais criativa, e não há sorteio.
 **Duração sugerida:** 10 dias de inscrições + 2 dias para o resultado.
-**Prêmio:** Kit Aromático Scenty (difusor, home spray, água para tecidos, sachê). Todos do grupo ganham um cupom.
+**Prêmio:** Kit Aromático Scenty (**⚠️ [DEFINIR: itens do kit]**). Todos do grupo ganham um cupom de **⚠️ [DEFINIR: valor do cupom]**.
+**Período:** de **⚠️ [DEFINIR: data de início]** a **⚠️ [DEFINIR: data final das inscrições]**, resultado em **⚠️ [DEFINIR: data do resultado]**.
+**Aprovação final (artes, legenda e regulamento):** **⚠️ [DEFINIR: aprovador]**
 
 > **Por que concurso cultural e não sorteio?** No Brasil, sorteio com prêmio exige autorização prévia do Ministério da Fazenda (SPA/MF, Lei 5.768/71). O concurso cultural é dispensado dessa autorização quando o vencedor é escolhido por critério de criatividade e não há compra obrigatória. Antes de publicar, vale confirmar com o contador ou o jurídico.
+
+## Valores da campanha
+
+Todos os valores abaixo vêm de `campanha.config.json`. Onde aparecer **⚠️ [DEFINIR: ...]**, o valor ainda não foi decidido.
+
+| Valor | Atual |
+|---|---|
+| @ do Instagram | **⚠️ [DEFINIR: @ do Instagram]** |
+| Início das inscrições | **⚠️ [DEFINIR: data de início]** |
+| Fim das inscrições | **⚠️ [DEFINIR: data final das inscrições]** |
+| Resultado | **⚠️ [DEFINIR: data do resultado]** |
+| Itens do kit | **⚠️ [DEFINIR: itens do kit]** |
+| Cupom | **⚠️ [DEFINIR: código do cupom]** |
+| Valor do cupom | **⚠️ [DEFINIR: valor do cupom]** |
+| Validade do cupom | **⚠️ [DEFINIR: validade do cupom]** |
+| Plataforma da loja | **⚠️ [DEFINIR: plataforma da loja]** |
+| CNPJ | **⚠️ [DEFINIR: CNPJ]** |
+| Link de convite do grupo | **⚠️ [DEFINIR: link de convite do grupo]** |
+| Aprovador | **⚠️ [DEFINIR: aprovador]** |
+
+**Como alterar:** edite `campanha.config.json` e rode `NODE_PATH=$(npm root -g) node gerar.mjs` nesta pasta. O script regenera este arquivo, o `ATIVIDADES-VICTOR.md` e os PNGs, e lista o que ainda falta definir. Com `--final`, ele se recusa a gerar enquanto houver pendência. Os textos fixos dos documentos ficam em `modelos/`.
 
 ---
 
@@ -19,8 +44,7 @@
 | `story-1-grupo-vip.png` | 1080×1920 | Stories (colar o sticker de link do grupo na área tracejada) |
 | `story-2-reposicao.png` | 1080×1920 | Stories para produtos esgotados / encomenda |
 
-Para editar um texto, altere o HTML em `artes/src/` e rode `NODE_PATH=$(npm root -g) node artes/src/render.mjs`.
-**Confira o @ da loja**: as artes usam `@scenty`. Se o perfil for outro, troque em `feed-2-como-participar.html`.
+Para editar um texto fixo, altere o HTML em `artes/src/` e rode `NODE_PATH=$(npm root -g) node gerar.mjs`. Datas, @, itens do kit e valor do cupom vêm de `campanha.config.json`; valores pendentes saem nas artes como uma etiqueta amarela "DEFINIR", para não serem publicados por engano.
 
 ---
 
@@ -36,13 +60,13 @@ Conta pra gente: QUAL CHEIRO TE LEVA PRA CASA?
 A resposta mais criativa ganha um Kit Aromático Scenty completo 🎁
 
 Como participar:
-1️⃣ Siga @scenty
+1️⃣ Siga **⚠️ [DEFINIR: @ do Instagram]**
 2️⃣ Curta e salve este post
 3️⃣ Comente sua resposta e marque 2 amigos
 4️⃣ Entre no nosso Grupo VIP do WhatsApp (link na bio). O resultado será anunciado lá!
 
-📅 Participações até DD/MM às 23h59
-🏆 Resultado em DD/MM, no grupo e nos stories
+📅 Participações até **⚠️ [DEFINIR: data final das inscrições]** às 23h59
+🏆 Resultado em **⚠️ [DEFINIR: data do resultado]**, no grupo e nos stories
 
 Quem entra no grupo VIP também ganha cupom exclusivo, lançamentos antes de todo mundo e aviso de reposição dos aromas esgotados.
 
@@ -57,7 +81,7 @@ Concurso cultural sem compra obrigatória e sem vínculo com o Instagram/Meta. R
 Seja bem-vindo(a) ao Grupo VIP Scenty! 🌿
 
 ✅ Você está participando do concurso "Qual cheiro te leva pra casa?". Lembre-se de comentar no post do Instagram.
-🎟️ Seu cupom exclusivo: VIPSCENTY10 (10% off no site, válido até DD/MM)
+🎟️ Seu cupom exclusivo: **⚠️ [DEFINIR: código do cupom]** (**⚠️ [DEFINIR: valor do cupom]** off no site, válido até **⚠️ [DEFINIR: validade do cupom]**)
 🔔 Aqui avisamos primeiro: lançamentos, reposição de aromas esgotados e ofertas relâmpago.
 
 Regras do grupo: só a Scenty envia mensagens (grupo de avisos), sem spam. 💚
@@ -67,13 +91,13 @@ Regras do grupo: só a Scenty envia mensagens (grupo de avisos), sem spam. 💚
 
 ## 4. Regulamento resumido (link da bio)
 
-1. **Promotora:** Scenty Marketing Olfativo, CNPJ ________.
-2. **Período:** de DD/MM a DD/MM, até 23h59 (horário de Brasília).
+1. **Promotora:** Scenty Marketing Olfativo, CNPJ **⚠️ [DEFINIR: CNPJ]**.
+2. **Período:** de **⚠️ [DEFINIR: data de início]** a **⚠️ [DEFINIR: data final das inscrições]**, até 23h59 (horário de Brasília).
 3. **Quem pode participar:** pessoas físicas maiores de 18 anos residentes no Brasil.
-4. **Como participar:** seguir @scenty, comentar no post oficial respondendo "Qual cheiro te leva pra casa?" e estar no Grupo VIP do WhatsApp na data do resultado. Cada pessoa concorre com uma única resposta.
+4. **Como participar:** seguir **⚠️ [DEFINIR: @ do Instagram]**, comentar no post oficial respondendo "Qual cheiro te leva pra casa?" e estar no Grupo VIP do WhatsApp na data do resultado. Cada pessoa concorre com uma única resposta.
 5. **Critério:** criatividade, originalidade e adequação ao tema, avaliados por comissão da Scenty. **Não há sorteio nem compra obrigatória.**
-6. **Prêmio:** 1 Kit Aromático Scenty (descrever os itens). O prêmio não pode ser trocado por dinheiro.
-7. **Resultado:** em DD/MM, no Grupo VIP e nos stories. O vencedor tem 7 dias para responder pelo direct. Se não responder, a próxima resposta mais bem avaliada é escolhida.
+6. **Prêmio:** 1 Kit Aromático Scenty, composto por: **⚠️ [DEFINIR: itens do kit]**. O prêmio não pode ser trocado por dinheiro.
+7. **Resultado:** em **⚠️ [DEFINIR: data do resultado]**, no Grupo VIP e nos stories. O vencedor tem 7 dias para responder pelo direct. Se não responder, a próxima resposta mais bem avaliada é escolhida.
 8. **Entrega:** frete por conta da Scenty, para endereço no Brasil.
 9. **Desclassificação:** perfis falsos, conteúdo ofensivo e respostas copiadas.
 10. Esta promoção não é patrocinada, administrada ou associada ao Instagram/Meta nem ao WhatsApp.
@@ -89,7 +113,7 @@ Passo a passo no app do Instagram: abra o post → **Turbinar** e configure:
 
 | Campo | Configuração |
 |---|---|
-| Objetivo / destino | **Mais visitas ao site**, colando o **link do convite do grupo** (`https://chat.whatsapp.com/...`) |
+| Objetivo / destino | **Mais visitas ao site**, colando o **link do convite do grupo** (**⚠️ [DEFINIR: link de convite do grupo]**) |
 | Botão | "Saiba mais" ou "Inscreva-se" |
 | Público | Personalizado: cidade/região onde a loja atende, 25–55 anos, interesses *decoração, casa, aromaterapia, perfumes, bem-estar, arquitetura de interiores*. |
 | Público 2 (opcional) | "Pessoas que interagiram com seu perfil" (remarketing) |
@@ -119,7 +143,9 @@ Passo a passo no app do Instagram: abra o post → **Turbinar** e configure:
 
 **Objetivo:** produtos esgotados continuam aparecendo no site e podem ser comprados como **encomenda/pré-venda** (ou recebem o botão "avise-me"), enquanto o grupo do WhatsApp avisa a reposição.
 
-Como fazer em cada plataforma (escolha a da loja):
+**Plataforma da loja:** **⚠️ [DEFINIR: plataforma da loja]**
+
+Como fazer em cada plataforma:
 
 - **Nuvemshop:** *Produtos → editar produto → Estoque*: marque **"Estoque infinito"**, ou deixe o estoque zerado com *Configurações → Opções de checkout → "Permitir compras de produtos sem estoque"*. Na descrição, informe o prazo: "Produto sob encomenda, envio em até X dias".
 - **Shopify:** *Produtos → produto → Inventário*: marque **"Continuar vendendo quando estiver sem estoque"**. Para vários produtos de uma vez: *Produtos → selecionar todos → Editar em massa → coluna "Continuar vendendo"*.
